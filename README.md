@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# Student Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend component of a full-stack **Student Management System**, designed to help administrators efficiently manage and oversee student information. The project leverages **React** and **Tailwind CSS** for a modern and responsive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Table View**: Browse and filter student information seamlessly.
+- **Dynamic Navigation**: Navigate between views using React Router.
+- **Modal-Based Forms**: Add or edit student details via intuitive modals.
+- **Bulk Management**: Select and delete multiple student records simultaneously.
+- **Pagination**: Efficiently handle large datasets (future updates will include infinite scrolling).
 
-## Expanding the ESLint configuration
+> **Note**: Currently, only the frontend is hosted, as the backend API is under development and undergoing security enhancements.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to Use
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository**:  
+   ```bash
+   git clone <repository-url>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Navigate to the project directory:**:  
+   ```cd <file-location>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Install dependencies:**:  
+   ```npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. **Start the development server:**:  
+   ```npm run dev
