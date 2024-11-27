@@ -19,10 +19,13 @@ This is the frontend component of a full-stack **Student Management System**, de
    git clone <repository-url>
 
 2. **Navigate to the project directory:**:  
-   ```cd <file-location>
+   ```bash
+   cd <file-location>
 
-3. **Install dependencies:**:  
-   ```npm install
+4. **Install dependencies:**:  
+   ```bash
+   npm install
 
-4. **Start the development server:**:  
-   ```npm run dev
+6. **Start the development server:**:  
+   ```bash
+   npm run dev
